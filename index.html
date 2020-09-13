@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Data Structures & Algos - Exercises and Concepts</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <section id="header">
+        <h1>Data Structures & Algos Summary</h1>
+        <h2>Collection of short lessons and examples</h2>
+    </section>
+    <h2>Instructions</h2>
+    <p>Most of the examples and lessons will be shown in the console in the respective folder name and files. Just use
+        live-preview to see the console and enable each script. The content seen on this HTML page is meant to be used
+        as a summary. So most of the actual learning and reviewing is in the file folder structure as well as any
+        resources.</p>
+    <!--############
+        TABLE OF CONTENTS
+    ##########-->
+    <h2>Table of contents</h2>
+    <section id="TOC">
+        <div>
+            <h3>Data Structures</h3>
+            <ul>
+                <li>Arrays (Static & Dynamic)</li>
+                <li>Hash Maps (Objects key-value pairs)</li>
+                <li>Linked Lists (Singly & Doubly)</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Algorithms</h3>
+            <p>Coming Soon!</p>
+        </div>
+    </section>
+    <!--############
+       Function Forms
+    ##########-->
+    <section>
+        <h2>Function Forms conversion</h2>
+        <p>
+            Throughout the course will be a mix of <strong>ES 6 and ES 5</strong>, but it mainly the same below is a
+            conversion of writing a function.
+        </p>
+        <div class="split_view">
+            <div class="side left_side">
+                <h3>ES 5 </h3>
+                <p>Here we use the basic function call</p>
+                <!-- ES 5-->
+                <div class="code_sample">
+                    <span style="color:orangered">function</span> <span
+                        style="color: #99EEBB;">compressAllBoxes(boxes)</span> { <br />
+                    &nbsp;&nbsp;&nbsp;<span style="color:gold">boxes</span>.<span style="color:#99EEBB"><span
+                            style="color:orchid">forEach</span>(<span
+                            style="color:orangered">function</span>(item)</span> { <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log(item); <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<span style="color: #99EEBB;">)</span>; <br />
+                    &nbsp;}
+                </div>
+                <p>Main differences:</p>
+                <ul>
+                    <li>Usually has the word <strong>function</strong> typically used on the outermost Function</li>
+                    <li>use of the word function a lot more wordier</li>
+                </ul>
+            </div>
+            <div class="side right_side">
+                <h3>ES 6 </h3>
+                <p>Here we use the basic function call the more modern way</p>
+                <!-- ES 6-->
+                <div class="code_sample">
+                    <span style="color:orangered">const</span> <span style="color: #99EEBB;">compressAllBoxes =
+                        (boxes)</span> => { <br />
+                    &nbsp;&nbsp;&nbsp;<span style="color:gold">boxes</span>.<span style="color:#99EEBB"><span
+                            style="color:orchid">forEach</span>(boxes)</span> => console.log(<span
+                        style="color:gold">boxes</span>)); <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}; <br />
+                </div>
+                <p>Main differences:</p>
+                <ul>
+                    <li>replace the function keyword</li>
+                    <li>the arrow function => is an implicit return. When you have one line of code return you do not
+                        need brackets or parentheses, but if its more than one line you do need it.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--############
+        Big O
+     ##########-->
+    <div id="big_O">
+        <h3>Big-O Complexity</h3>
+        <p>Deals with the Time and Space Complexity, or rather how effective and efficient the code is. Often:
+        <ul>
+            <li>Look ups are faster <strong>O(1)</strong> <strong>Constant Time</strong></li>
+            <li>Array deletion and shifting is more expensive <strong>O(n^2)</strong> <strong>Linear Time</strong></li>
+        </ul>
+        </p>
+        <img src="assets/Big O.png" alt="Big-O complexity line chart">
+        <img src="assets/Big O-2.png" alt="Big-O complexity line chart view 2 simplified">
+
+    </div>
+    <!--############
+       Linked Lists
+    ##########-->
+    <section>
+        <h2>Linked Lists</h2>
+        <p>
+
+        </p>
+        <div class="summaryProsAndCons_container">
+            <div>
+                <h3>Singly Linked List <span class="pros_header">Pros</span></h3>
+                <ul>
+                    <li>Simplest thing to make compared to doubly.</li>
+                    <li>Requires less memory, faster when deleting and insert</li>
+                    <li>Good to use when memory and space is limited.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Singly Linked List <spa class="cons_header">Cons</spa>
+                </h3>
+                <ul>
+                    <li>Can be iterated or traversed on both sides (head & tail)</li>
+                    <li>Requires less memory, faster when deleting and insert</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Doubly Linked List <span class="pros_header">Pros</span></h3>
+                <ul>
+                    <li>Can be iterated or traversed on both sides (head & tail)</li>
+                    <li>Requires less memory, faster when deleting and insert</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Doubly Linked List <spa class="cons_header">Cons</spa>
+                </h3>
+                <ul>
+                    <li>Can be iterated or traversed on both sides (head & tail)</li>
+                    <li>Requires less memory, faster when deleting and insert</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div>
+        <h3>Resources</h3>
+        <p>
+            These are quick linsk for references that explains concepts and resources better.
+        </p>
+        <a
+            href="https://www.hackerearth.com/practice/notes/big-o-cheatsheet-series-data-structures-and-algorithms-with-thier-complexities-1/">
+            Big O Complexity
+        </a>Z
+        <a href="https://visualgo.net/en/list">Visual Algo</a>
+    </div>
+    <!-- Scripts to run -->
+    <!-- <script src="./Data Structures/"></script> -->
+    <!-- <script src="./Data Structures/Linked Lists/LinkedList.js"></script> -->
+    <script src="./Data Structures/Linked Lists/DoublyLinkedList.js"></script>
+
+</footer>

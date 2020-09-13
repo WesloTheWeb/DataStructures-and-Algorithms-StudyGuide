@@ -1,0 +1,92 @@
+/* General Settings */
+body {
+    margin: auto 1.5rem;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+#header {
+    text-align: center;
+} 
+
+.codeBlock {
+    padding: 1.5rem;
+    border: 2px solid green;
+}
+
+#TOC {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#TOC h3 {
+    text-decoration: underline;
+}
+
+/*Table of contents*/
+#TOC ul li {
+    background-color: orange;
+    color: #000;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* */
+.split_view {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.side {
+    border: #000 solid 3.5px;
+    border-radius: 15px;
+    margin: auto 2.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.left_side {
+    
+}
+
+.right_side {
+
+}
+
+.code_sample {
+    background-color: #000;
+    color: lime;
+    font-family: 'consolas';
+    padding: .5rem;
+    
+}
+
+/* Big O section */
+#big_O img {
+    width: 45%;
+}
+
+/* Comparisons */
+.summaryProsAndCons_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+.summaryProsAndCons_container div {
+    border: 2px solid #000;
+    padding: 1rem 2.5rem;
+}
+
+ 
+.pros_header, .summaryProsAndCons_container div:nth-child(1) li {
+    color: #02A325;
+}
+
+.cons_header, .summaryProsAndCons_container div:nth-child(2) li {
+    color: #FA0832;
+}
