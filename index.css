@@ -8,6 +8,8 @@ footer {
 }
 #header {
     text-align: center;
+    background-color: antiquewhite;
+    padding: 1rem;
 } 
 
 .codeBlock {
@@ -33,6 +35,7 @@ footer {
     border-radius: 15px;
     font-size: 1.2em;
     font-weight: bold;
+    text-align: center;
 }
 /* */
 .split_view {
